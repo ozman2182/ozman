@@ -1,0 +1,39 @@
+html {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	/* Body font family */
+	font-family: 'Roboto', sans-serif;
+	/* remove global line height */
+	line-height: 1.325;
+	/* global text colors*/
+	color: $primary-gray;
+}
+
+/* Heading font family */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Archivo Black', sans-serif;
+	color: black;
+}
+
+h1 {
+	line-height: 1.125;
+}
+
+.large-text {
+	font-size: 1.25rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+	main {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}
