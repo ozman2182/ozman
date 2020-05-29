@@ -1,0 +1,6 @@
+@mixin blue-boxshadow {
+    box-shadow: 0px 0px 18px 0px rgba(0, 75, 160, 0.3);
+}
+@mixin blue-button-boxshadow {
+    box-shadow: 0px 0px 10px 0px rgba(0, 75, 160, 0.3);
+}

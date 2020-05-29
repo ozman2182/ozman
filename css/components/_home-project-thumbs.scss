@@ -1,40 +1,90 @@
-ul.project-thumbs {
-	list-style: none;
-	padding-left: 0;
+.portfolio-section {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: white;
+}
+.project-thumbs {
 	text-align: center;
-	li {
-		display: block;
-	}
+	max-width: 1220px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1em;
+	margin-bottom: 2em;
 	a {
 		display: block;
-		margin-bottom: 1em;
 		padding-top: 1em;
 		color: white;
 		text-decoration: none;
 		line-height: 0;
 		background-color: $primary-blue;
-		&:hover {
-			background-color: darken($primary-blue,5%);
+		overflow: hidden;
+		transition: all .2s ease-in;
+		&:hover,
+		&:focus {
+			background-color: $dark-blue;
+			transform:translateY(-10px);
+			@include blue-boxshadow;
+			outline: 0;
 		}
+		& > img {
+			width: 100%;
+		}
+	}
+	
+}
+
+.project-single {
+	margin-bottom: 1em;
+}
+
+@media (min-width: 1220px) {
+	.project-single {
+		flex-basis: 393px;
 	}
 }
 
 .project-client {
 	text-transform: uppercase;
-	font-size: .9rem;
 	line-height: 1.325;
 }
+
 .project-name{
-	margin-top: .25em;
+	margin-right: 1em;
+	margin-left: 1em;
 	margin-bottom: 0;
-	margin-right: 1em;
-	margin-left: 1em;
 	color: white;
-	line-height: 1.3;
+	line-height: 1.35;
 }
+
 .project-description {
-	margin-top: .5em;
 	margin-right: 1em;
 	margin-left: 1em;
-	line-height: 1.325;
+	line-height: 1.35;
+}
+
+@media (min-width: 680px) {
+	.project-thumbs {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+}
+
+@media (min-width: 846px) and (max-width: 1220px) {
+	.project-thumbs {
+		max-width: 846px;
+	}
+	.project-single {
+		flex-basis: calc(50% - 0.5em);
+	}
+}
+
+/* Support grid */
+@supports (display: grid) {
+	.project-thumbs {
+		display: grid;
+		column-gap: 20px;
+		grid-template-columns: repeat(auto-fit, minmax(393px, 1fr));
+	}
 }

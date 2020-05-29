@@ -3,7 +3,11 @@
 @import "generic/normalize.scss";
 @import "generic/global.scss";
 
+@import "elements/button.scss";
+
 @import "components/header.scss";
 @import "components/main-nav.scss";
 @import "components/home-project-thumbs.scss";
+@import "components/home-intro.scss";
+@import "components/home-services.scss";
 @import "components/footer.scss";

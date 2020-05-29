@@ -1,0 +1,24 @@
+.button {
+    display: inline-block;
+    padding-top: .8em;
+    padding-bottom: .8em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 3px;
+    background-color: $soft-gray;
+    color: white;
+    font-size: .92rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1;
+    transition: all .2s ease-in;
+}
+.button-blue {
+    background-color: $primary-blue;
+    color: white;
+    &:hover,
+    &:focus {
+        background-color: $dark-blue;
+        @include blue-button-boxshadow;
+    }
+}

@@ -3,37 +3,139 @@ html {
 	        box-sizing: border-box;
 }
 
-body {
-	position: relative;
+// Scale text proportionately
+:root {
+	/* Set base font size */
+	font-size: calc(1rem + 0.125vw);
+
 	/* Body font family */
 	font-family: 'Roboto', sans-serif;
-	/* remove global line height */
+
+	/* Remove global line height */
 	line-height: 1.325;
+
 	/* global text colors*/
 	color: $primary-gray;
 }
 
+body {
+	position: relative;
+	background-color: $offwhite;
+}
+
+/* Typography */
+
 /* Heading font family */
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Archivo Black', sans-serif;
-	color: black;
+	letter-spacing: 0.25px;
+	color: $primary-gray;
 }
 
+/* Heading sizes */
 h1 {
-	line-height: 1.125;
+	font-size: 2rem;
 }
 
-.large-text {
-	font-size: 1.25rem;
+h2 {
+	font-size: 1.75rem;
 }
 
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.4rem;
+}
+
+h5 {
+	font-size: 1.3rem;
+}
+
+h6 {
+	font-size: 1.2rem;
+}
+
+/* Custom font sizes */
+:root {
+	.font-size-small {
+		font-size: 0.95rem;
+	}
+	
+	.font-size-smaller {
+		font-size: 0.85rem;
+	}
+
+	.font-size-smallest {
+		font-size: 0.75rem;
+	}
+	
+	.font-size-base {
+		font-size: 1rem;
+	}
+
+	.font-size-biggish {
+		font-size: 1.5rem;
+	}
+
+	.font-size-big {
+		font-size: 2rem;
+	}
+}
+
+/* Utility classes */
+.textalign-center {
+	text-align: center;
+}
+
+.maxwidth-600 {
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.maxwidth-1012 {
+	max-width: 1012px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.maxwidth-1220 {
+	max-width: 1220px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.smallscreen-padding {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+/* Responsive images */
 img {
 	max-width: 100%;
 }
 
-@media screen and (max-width: 900px) {
-	main {
-		padding-left: 1em;
-		padding-right: 1em;
+/* Stack classes */
+.stack-l {
+	display: block;
+}
+
+.stack-l>*+* {
+	margin-top: 0.5em;
+}
+
+/* Other elements */
+a {
+	color: $primary-blue;
+}
+span {
+	line-height: 1;
+}
+
+@media screen and (max-width: 960px) {
+	/* Responsive typography */
+	:root {
+		font-size: 125%;
 	}
 }
