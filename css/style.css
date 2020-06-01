@@ -2616,7 +2616,6 @@ nav {
 .page-intro {
   padding-bottom: 1em; }
   .page-intro h1 {
-    line-height: 1;
     margin-top: 0; }
   .page-intro h1 > span {
     font-family: 'Roboto', sans-serif;
@@ -2635,6 +2634,10 @@ nav {
   .page-intro {
     padding-top: 1em;
     padding-bottom: 2em; } }
+
+.project-featured-image {
+  min-width: 100%;
+  height: auto; }
 
 .services {
   background-color: #262524;
