@@ -347,6 +347,56 @@ template {
  * https://get.foundation
  * Licensed under MIT Open Source
  */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+@media print, screen and (min-width: 40em) {
+  .medium-text-left {
+    text-align: left;
+  }
+
+  .medium-text-right {
+    text-align: right;
+  }
+
+  .medium-text-center {
+    text-align: center;
+  }
+
+  .medium-text-justify {
+    text-align: justify;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .large-text-left {
+    text-align: left;
+  }
+
+  .large-text-right {
+    text-align: right;
+  }
+
+  .large-text-center {
+    text-align: center;
+  }
+
+  .large-text-justify {
+    text-align: justify;
+  }
+}
 .is-visible {
   display: block !important;
 }
@@ -3338,13 +3388,18 @@ h6 {
 }
 
 .smallscreen-padding {
-  padding-right: 1em;
-  padding-left: 1em;
+  padding-right: 0.675rem;
+  padding-left: 0.675rem;
 }
 
 /* Responsive images */
 img {
   max-width: 100%;
+}
+
+.responsive-image {
+  height: auto;
+  width: 100%;
 }
 
 /* Stack classes */
@@ -3595,41 +3650,30 @@ nav a svg path {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
-.home-intro {
-  padding-bottom: 2em;
+.page-intro {
+  padding-bottom: 1em;
 }
-.home-intro img {
-  height: auto;
-  width: 100%;
-}
-.home-intro h1 {
-  line-height: 1;
-}
-.home-intro h1 > span {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.about-intro {
-  padding-bottom: 2em;
-}
-.about-intro img {
-  height: auto;
-  width: 100%;
-}
-.about-intro h1 {
+.page-intro h1 {
   line-height: 1;
   margin-top: 0;
 }
-.about-intro h1 > span {
+.page-intro h1 > span {
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   text-transform: uppercase;
   font-weight: 500;
 }
 
+.page-intro.about-oz h1 {
+  margin-top: 0;
+}
+
+@media (min-width: 680px) {
+  .page-intro {
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+}
 .services {
   background-color: #262524;
   color: white;

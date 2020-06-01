@@ -107,13 +107,18 @@ h6 {
 	margin-left: auto;
 }
 .smallscreen-padding {
-	padding-right: 1em;
-	padding-left: 1em;
+	padding-right: 0.675rem;
+	padding-left: 0.675rem;
 }
 
 /* Responsive images */
 img {
 	max-width: 100%;
+}
+
+.responsive-image {
+	height: auto;
+	width: 100%;
 }
 
 /* Stack classes */
