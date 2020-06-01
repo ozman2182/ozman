@@ -1,17 +1,29 @@
 header {
-	padding: 0.5em;
+	padding-top: 0.5em;
+	margin-bottom: 1em;
 	text-align: center;
 	& > div {
-		
+		width: 100%;
 		& > a {
 			display: block;
 		}
 	}
 }
+@media (max-width: 680px) {
+	header > div > a {
+		margin-bottom: 0.5em;
+	}
+}
 
-@media (max-width: 600px) {
-	header > div {
-		
+@media (min-width: 680px) {
+	header {
+		padding-right: 1em;
+		padding-left: 1em;
+		& > div {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
 	}
 }
 

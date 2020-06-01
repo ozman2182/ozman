@@ -7,12 +7,17 @@
     border-radius: 3px;
     background-color: $soft-gray;
     color: white;
-    font-size: .92rem;
+    font-size: .8rem;
     text-decoration: none;
     text-transform: uppercase;
     line-height: 1;
     transition: all .2s ease-in;
+    &:hover,
+    &:focus {
+        background-color: darken($primary-gray, 2%);
+    }
 }
+
 .button-blue {
     background-color: $primary-blue;
     color: white;
@@ -20,5 +25,15 @@
     &:focus {
         background-color: $dark-blue;
         @include blue-button-boxshadow;
+    }
+}
+
+.button-green {
+    background-color: $green;
+    color: white;
+    &:hover,
+    &:focus {
+        background-color: darken($green, 10%);
+        @include green-button-boxshadow;
     }
 }

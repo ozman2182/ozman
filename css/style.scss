@@ -1,6 +1,10 @@
 @import "generic/mixins.scss";
 @import "generic/variables.scss";
 @import "generic/normalize.scss";
+
+// Foundation layout
+@import "vendor/foundation.scss";
+
 @import "generic/global.scss";
 
 @import "elements/button.scss";
@@ -9,5 +13,6 @@
 @import "components/main-nav.scss";
 @import "components/home-project-thumbs.scss";
 @import "components/home-intro.scss";
+@import "components/about-intro.scss";
 @import "components/home-services.scss";
 @import "components/footer.scss";
