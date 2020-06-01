@@ -3668,6 +3668,11 @@ nav a svg path {
   margin-top: 0;
 }
 
+@media (max-width: 680px) {
+  .page-intro img {
+    margin-bottom: 0.5em;
+  }
+}
 @media (min-width: 680px) {
   .page-intro {
     padding-top: 1em;
