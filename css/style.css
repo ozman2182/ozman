@@ -2551,6 +2551,7 @@ nav {
   .project-thumbs a {
     display: block;
     padding-top: 1em;
+    border-radius: 3px;
     color: white;
     text-decoration: none;
     line-height: 0;
@@ -2568,7 +2569,9 @@ nav {
 .project-single {
   margin-bottom: 1em; }
   .project-single a {
-    height: 100%; }
+    display: grid;
+    align-items: stretch;
+    line-height: 1.35; }
 
 @media (min-width: 1220px) {
   .project-single {
@@ -2576,19 +2579,19 @@ nav {
 
 .project-client {
   text-transform: uppercase;
-  line-height: 1.325; }
+  align-self: end; }
 
 .project-name {
   margin-right: 1em;
   margin-left: 1em;
   margin-bottom: 0;
-  color: white;
-  line-height: 1.35; }
+  align-self: center;
+  color: white; }
 
 .project-description {
   margin-right: 1em;
   margin-left: 1em;
-  line-height: 1.35; }
+  margin-bottom: 0; }
 
 @media (min-width: 680px) {
   .project-thumbs {
