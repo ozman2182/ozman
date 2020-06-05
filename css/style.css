@@ -2570,7 +2570,6 @@ nav {
   margin-bottom: 1em; }
   .project-single a {
     display: grid;
-    align-items: stretch;
     line-height: 1.35; }
 
 @media (min-width: 1220px) {
