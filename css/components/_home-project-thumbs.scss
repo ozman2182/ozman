@@ -13,7 +13,8 @@
 	margin-bottom: 2em;
 
 	a {
-		display: block;
+		display: flex;
+		flex-direction: column;
 		padding-top: 1em;
 		border-radius: 3px;
 		color: white;
@@ -33,16 +34,16 @@
 
 		&>img {
 			width: 100%;
+			align-self: flex-end;
 		}
 	}
 
 }
 
 .project-single {
+	display: flex;
 	margin-bottom: 1em;
-
-	a {
-		display: grid;
+	a {		
 		line-height: 1.35;
 	}
 }
@@ -55,7 +56,6 @@
 
 .project-client {
 	text-transform: uppercase;
-	align-self: end;
 }
 
 .project-name {
@@ -85,7 +85,6 @@
 	.project-thumbs {
 		max-width: 846px;
 	}
-
 	.project-single {
 		flex-basis: calc(50% - 0.5em);
 	}
@@ -100,5 +99,15 @@
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		justify-items: stretch;
 		grid-auto-rows: 1fr;
+	}
+	.project-single {
+		display: grid;
+		margin-bottom: 0;
+		a {
+			display: grid;
+			img {
+				align-self: end;
+			}
+		}
 	}
 }
