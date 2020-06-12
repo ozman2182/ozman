@@ -89,6 +89,15 @@ p {
 	}
 }
 
+/* Other elements */
+a {
+	color: $primary-blue;
+}
+
+span {
+	line-height: 1;
+}
+
 /* Utility classes */
 .textalign-center {
 	text-align: center;
@@ -116,6 +125,14 @@ p {
 	padding-left: 0.675rem;
 }
 
+.white-section {
+	background-color: white;
+}
+
+.large-p {
+	font-size: $large-p;
+}
+
 /* Responsive images */
 img {
 	max-width: 100%;
@@ -133,19 +150,6 @@ img {
 
 .stack-l>*+* {
 	margin-top: 0.5em;
-}
-
-/* Other elements */
-a {
-	color: $primary-blue;
-}
-
-.large-p {
-	font-size: $large-p;
-}
-
-span {
-	line-height: 1;
 }
 
 @media screen and (max-width: 960px) {
