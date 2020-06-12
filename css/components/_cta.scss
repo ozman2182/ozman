@@ -1,12 +1,25 @@
 .cta-section {
+  padding-top: 1em;
   padding-bottom: 2em;
-  background-color: $purple;
-
+  color: white;
   .cell>h2,
   .cell>h3,
   .cell>h4,
   .cell>h5,
   .cell>h6 {
     color: white;
+  }
+}
+
+.cta-section--blue {
+  background-color: $primary-blue;
+  .button {
+    color: white;
+    background-color: $primary-gray;
+
+    &:hover {
+      color: $primary-blue;
+      background-color: white;
+    }
   }
 }

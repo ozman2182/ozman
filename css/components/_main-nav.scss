@@ -12,10 +12,10 @@ nav {
 		
 		&:hover,
 		&:focus {
-			background-color: $primary-blue;
+			background-color: $dark-blue;
 		}
 		&:active {
-			background-color: $primary-blue;
+			background-color: $dark-blue;
 		}
 		svg path {
 			fill: white;

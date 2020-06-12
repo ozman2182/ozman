@@ -3317,6 +3317,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Archivo Black", sans-serif;
   letter-spacing: 0.25px;
   color: #262524;
+  margin-bottom: 0.5em;
 }
 
 /* Heading sizes */
@@ -3342,6 +3343,10 @@ h5 {
 
 h6 {
   font-size: 1.2rem;
+}
+
+p {
+  margin-bottom: 0.5em;
 }
 
 /* Custom font sizes */
@@ -3416,6 +3421,10 @@ a {
   color: #2777D3;
 }
 
+.large-p {
+  font-size: 1.3rem;
+}
+
 span {
   line-height: 1;
 }
@@ -3428,14 +3437,14 @@ span {
 }
 .button {
   display: inline-block;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  padding-right: 1em;
-  padding-left: 1em;
+  padding-top: 1.1em;
+  padding-bottom: 1em;
+  padding-right: 1.1em;
+  padding-left: 1.1em;
   border-radius: 3px;
   background-color: #646C82;
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-decoration: none;
   text-transform: uppercase;
   line-height: 1;
@@ -3521,10 +3530,10 @@ nav a {
   transition: all 0.2s ease-in;
 }
 nav a:hover, nav a:focus {
-  background-color: #2777D3;
+  background-color: #1f5fa8;
 }
 nav a:active {
-  background-color: #2777D3;
+  background-color: #1f5fa8;
 }
 nav a svg path {
   fill: white;
@@ -3573,8 +3582,8 @@ nav a svg path {
   }
 }
 .portfolio-section {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   background-color: white;
 }
 
@@ -3685,11 +3694,9 @@ nav a svg path {
 .page-intro h1 {
   margin-top: 0;
 }
-.page-intro h1 > span {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  font-weight: 500;
+
+.page-intro--name {
+  margin-bottom: 0;
 }
 
 .page-intro.about-oz h1 {
@@ -3755,6 +3762,31 @@ footer {
   text-align: center;
   color: white;
   background-color: #262524;
+}
+
+.cta-section {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  color: white;
+}
+.cta-section .cell > h2,
+.cta-section .cell > h3,
+.cta-section .cell > h4,
+.cta-section .cell > h5,
+.cta-section .cell > h6 {
+  color: white;
+}
+
+.cta-section--blue {
+  background-color: #2777D3;
+}
+.cta-section--blue .button {
+  color: white;
+  background-color: #262524;
+}
+.cta-section--blue .button:hover {
+  color: #2777D3;
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

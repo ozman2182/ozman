@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Archivo Black', sans-serif;
 	letter-spacing: 0.25px;
 	color: $primary-gray;
+	margin-bottom: 0.5em;
 }
 
 /* Heading sizes */
@@ -55,6 +56,10 @@ h5 {
 
 h6 {
 	font-size: 1.2rem;
+}
+
+p {
+	margin-bottom: 0.5em;
 }
 
 /* Custom font sizes */
@@ -134,6 +139,11 @@ img {
 a {
 	color: $primary-blue;
 }
+
+.large-p {
+	font-size: $large-p;
+}
+
 span {
 	line-height: 1;
 }
