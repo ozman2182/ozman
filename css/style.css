@@ -3642,6 +3642,7 @@ nav a svg path {
 }
 
 .project-name {
+  font-size: 1.25rem;
   margin-right: 1em;
   margin-left: 1em;
   margin-bottom: 0;
