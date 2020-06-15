@@ -1,19 +1,21 @@
-@import "generic/mixins.scss";
-@import "generic/variables.scss";
-@import "generic/normalize.scss";
+@import "generic/mixins";
+@import "generic/variables";
+@import "generic/normalize";
 
 // Foundation layout
-@import "vendor/foundation.scss";
+@import "vendor/foundation";
 
-@import "generic/global.scss";
+@import "generic/global";
 
-@import "elements/button.scss";
+@import "elements/button";
 
-@import "components/header.scss";
-@import "components/main-nav.scss";
-@import "components/home-project-thumbs.scss";
-@import "components/page-intro.scss";
-@import "components/projects-single.scss";
-@import "components/home-services.scss";
-@import "components/footer.scss";
-@import "components/cta.scss";
+@import "components/header";
+@import "components/main-nav";
+@import "components/home-project-thumbs";
+@import "components/page-intro";
+@import "components/projects-single";
+@import "components/home-services";
+@import "components/footer";
+@import "components/cta";
+@import "components/project-controls";
+@import "components/testimonials"

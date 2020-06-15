@@ -3718,6 +3718,10 @@ nav a svg path {
     padding-bottom: 2em;
   }
 }
+.project-featured {
+  padding-bottom: 2em;
+}
+
 @media (max-width: 680px) {
   .project-featured {
     padding-right: 1em;
@@ -3766,7 +3770,7 @@ nav a svg path {
     max-width: 20ch;
   }
 }
-footer {
+body > footer {
   padding-top: 2em;
   padding-bottom: 2em;
   text-align: center;
@@ -3797,6 +3801,89 @@ footer {
 .cta-section--blue .button:hover {
   color: #2777D3;
   background-color: white;
+}
+
+.project-controls a {
+  border-radius: 3px;
+  padding-top: 1.1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  background-color: #646C82;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* svg icon color */
+}
+.project-controls a:hover, .project-controls a:focus {
+  background-color: #1f5fa8;
+  box-shadow: 0px 0px 10px 0px rgba(0, 75, 160, 0.3);
+}
+.project-controls a span {
+  display: block;
+}
+.project-controls a .icon-left {
+  margin-right: 10px;
+}
+.project-controls a .icon-right {
+  margin-left: 10px;
+}
+
+@media (max-width: 40em) {
+  .project-controls a:first-child {
+    margin-top: 1em;
+  }
+}
+figure, blockquote {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+blockquote {
+  position: relative;
+  background-color: white;
+  border-radius: 3px;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+figure > footer {
+  text-align: right;
+  position: relative;
+}
+figure > footer img {
+  position: relative;
+  right: 30px;
+}
+figure > footer cite {
+  display: block;
+}
+
+blockquote:before {
+  content: open-quote;
+  display: inline;
+  line-height: 0;
+  position: relative;
+  left: 0;
+  top: 60px;
+  color: #b7bcc8;
+  font-size: 7rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+blockquote::after {
+  content: " ";
+  height: 0;
+  position: absolute;
+  width: 0;
+  bottom: -20px;
+  right: 50px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid white;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,52 @@
+figure, blockquote {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+blockquote {
+    position: relative;
+    background-color: white;
+    border-radius: 3px;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+figure > footer {
+    text-align: right;
+    position: relative;
+    img {
+        position: relative;
+        right: 30px;
+    }
+    cite {
+        display: block;
+    }
+}
+
+blockquote:before {
+    content: open-quote;
+    display: inline;
+    line-height: 0;
+    position: relative;
+    left: 0;
+    top: 60px;
+    color: lighten($soft-gray,30%);
+    font-size: 7rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+blockquote::after {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    bottom: -20px;
+    right: 50px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+}
