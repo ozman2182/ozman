@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://use.typekit.net/pok6qac.css");
 html {
   line-height: 1.15;
   /* 1 */
@@ -3314,7 +3315,8 @@ body {
 /* Typography */
 /* Heading font family */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "aktiv-grotesk-extended", Helvetica, sans-serif;
+  font-weight: 800;
   letter-spacing: 0.25px;
   color: #262524;
   margin-bottom: 0.5em;
