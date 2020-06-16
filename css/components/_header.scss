@@ -29,6 +29,8 @@ header {
 
 @media (min-width: 1220px) {
 	header>div {
+		display: flex;
+		align-items: middle;
 		max-width: 1220px;
 		margin-right: auto;
 		margin-left: auto;

@@ -19,6 +19,22 @@
     }
 }
 
+.button--icon {
+    padding-bottom: 1em;
+    span {
+        margin-left: 2px;
+    }
+
+    svg path {
+        transition: all .2s ease-in;
+    }
+
+    &:hover svg path,
+    &:focus svg path {
+        fill: $primary-blue;
+    }
+}
+
 .button--blue {
     background-color: $primary-blue;
     color: white;

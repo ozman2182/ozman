@@ -8,6 +8,9 @@
 
 .page-intro--name {
     margin-bottom: 0;
+    & + p {
+        margin-top: 0;
+    }
 }
 
 .page-intro.about-oz {

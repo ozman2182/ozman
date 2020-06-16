@@ -3460,6 +3460,19 @@ img {
   background-color: #21201f;
 }
 
+.button--icon {
+  padding-bottom: 1em;
+}
+.button--icon span {
+  margin-left: 2px;
+}
+.button--icon svg path {
+  transition: all 0.2s ease-in;
+}
+.button--icon:hover svg path, .button--icon:focus svg path {
+  fill: #2777D3;
+}
+
 .button--blue {
   background-color: #2777D3;
   color: white;
@@ -3517,6 +3530,8 @@ header > div > a {
 }
 @media (min-width: 1220px) {
   header > div {
+    display: flex;
+    align-items: middle;
     max-width: 1220px;
     margin-right: auto;
     margin-left: auto;
@@ -3704,6 +3719,9 @@ nav a svg path {
 
 .page-intro--name {
   margin-bottom: 0;
+}
+.page-intro--name + p {
+  margin-top: 0;
 }
 
 .page-intro.about-oz h1 {
