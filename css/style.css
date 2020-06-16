@@ -3815,7 +3815,6 @@ body > footer {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  /* svg icon color */
 }
 .project-controls a:hover, .project-controls a:focus {
   background-color: #1f5fa8;
@@ -3829,6 +3828,9 @@ body > footer {
 }
 .project-controls a .icon-right {
   margin-left: 10px;
+}
+.project-controls a span.next-project-name {
+  display: inline-block;
 }
 
 @media (max-width: 40em) {

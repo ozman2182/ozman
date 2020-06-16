@@ -21,7 +21,9 @@
     & .icon-right {
         margin-left: 10px;
     }
-    /* svg icon color */
+    & span.next-project-name {
+        display: inline-block;
+    }
 }
 
 @media (max-width: 40em) {
