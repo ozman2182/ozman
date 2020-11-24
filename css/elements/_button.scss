@@ -44,6 +44,11 @@
         background-color: $dark-blue;
         @include blue-button-boxshadow;
     }
+    
+    &:hover svg path,
+    &:focus svg path {
+        fill: white;
+    }
 }
 
 .button--green {
