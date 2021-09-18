@@ -2923,7 +2923,7 @@ html {
   /* Remove global line height */
   line-height: 1.325;
   /* global text colors*/
-  color: #262524;
+  color: #333333;
 }
 
 body {
@@ -2937,7 +2937,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'aktiv-grotesk-extended', Helvetica, sans-serif;
   font-weight: 800;
   letter-spacing: 0.25px;
-  color: #262524;
+  color: #333333;
   margin-bottom: 0.5em;
 }
 
@@ -3084,7 +3084,7 @@ img {
 }
 
 .button:hover, .button:focus {
-  background-color: #21201f;
+  background-color: #2e2e2e;
 }
 
 .button--icon {
@@ -3480,7 +3480,7 @@ nav a svg path {
 }
 
 .services {
-  background-color: #262524;
+  background-color: #333333;
   color: white;
   padding-top: 2em;
   padding-bottom: 2em;
@@ -3530,7 +3530,7 @@ body > footer {
   padding-bottom: 2em;
   text-align: center;
   color: white;
-  background-color: #262524;
+  background-color: #333333;
 }
 
 .cta-section {
@@ -3553,7 +3553,7 @@ body > footer {
 
 .cta-section--blue .button {
   color: white;
-  background-color: #262524;
+  background-color: #333333;
 }
 
 .cta-section--blue .button:hover {
