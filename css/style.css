@@ -3479,6 +3479,40 @@ nav a svg path {
   height: auto;
 }
 
+.project-icon-heading {
+  padding-top: 2em;
+}
+
+.project-icon-heading > h2 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+@media (min-width: 680px) {
+  .project-icon-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .project-icon-heading > h2 {
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+  }
+  .project-icon-heading > svg {
+    display: inline-block;
+    width: 48px;
+    margin-right: 10px;
+    height: 100%;
+  }
+}
+
 .services {
   background-color: #333333;
   color: white;
