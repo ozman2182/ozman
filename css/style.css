@@ -3049,6 +3049,11 @@ li {
   font-size: 1.3rem;
 }
 
+.img-dropshadow {
+  -webkit-filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.4));
+}
+
 /* Responsive images */
 img {
   max-width: 100%;
@@ -3607,6 +3612,10 @@ body > footer {
 .cta-section--blue .button:hover {
   color: #2777D3;
   background-color: white;
+}
+
+.project-controls {
+  margin-bottom: 1em;
 }
 
 .project-controls a {
