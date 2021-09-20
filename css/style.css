@@ -2970,6 +2970,11 @@ p {
   margin-bottom: 0.5em;
 }
 
+figcaption {
+  margin-top: 0.5em;
+  font-size: 0.8rem;
+}
+
 /* Custom font sizes */
 :root .font-size-small {
   font-size: 0.95rem;
@@ -3002,6 +3007,10 @@ a {
 
 span {
   line-height: 1;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 /* Utility classes */
@@ -3155,6 +3164,10 @@ header > div {
 
 header > div > a {
   display: block;
+}
+
+.logo {
+  margin-top: 1em;
 }
 
 @media (max-width: 680px) {

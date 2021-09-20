@@ -63,6 +63,11 @@ p {
 	margin-bottom: 0.5em;
 }
 
+figcaption {
+	margin-top: 0.5em;
+	font-size: 0.8rem;
+}
+
 /* Custom font sizes */
 :root {
 	.font-size-small {
@@ -97,6 +102,10 @@ a {
 
 span {
 	line-height: 1;
+}
+
+li {
+	margin-bottom: 10px;
 }
 
 /* Utility classes */
