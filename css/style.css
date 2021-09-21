@@ -3482,7 +3482,6 @@ nav a svg path {
 }
 
 .project-featured {
-  padding-top: 2em;
   padding-bottom: 2em;
 }
 
@@ -3490,6 +3489,12 @@ nav a svg path {
   .project-featured {
     padding-right: 1em;
     padding-left: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-featured {
+    padding-top: 2em;
   }
 }
 
